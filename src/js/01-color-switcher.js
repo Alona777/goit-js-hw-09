@@ -8,7 +8,7 @@ const refs = {
   body: document.querySelector('body'),
 };
 
-// refs.btnStop.setAttribute('disabled', true);
+
 refs.btnStop.disabled = true;
 refs.btnStart.addEventListener('click', onBtnStartChangeColor);
 refs.btnStop.addEventListener('click', onBtnStopChangeColor);
@@ -27,8 +27,8 @@ function onBtnStartChangeColor() {
 function onBtnStopChangeColor() {
   refs.btnStart.disabled = false;
   refs.btnStop.disabled = true;
-  // refs.btnStart.removeAttribute('disabled');
-  // refs.btnStop.setAttribute('disabled', true);
+
+
 
   clearInterval(idInt);
 }
